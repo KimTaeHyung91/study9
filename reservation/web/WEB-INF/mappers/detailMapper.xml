@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="detailDao">
+    <select id="getDetail"
+            parameterType="java.util.Map"
+            resultType="detailDto">
+        SELECT  B.ID                                                        AS ID,
+                B.DESCRIPTION                                               AS DESCRIPTION,
+                B.CONTENT                                                   AS CONTENT,
+                E.SAVE_FILE_NAME                                            AS FILE_NAME,
+                CASE WHEN B.EVENT = '' THEN 'EVENT' ELSE B.EVENT END        AS EVENT
+          FROM  CATEGORY       A,
+                PRODUCT        B,
+                DISPLAY_INFO   C,
+                PRODUCT_IMAGE  D,
+                FILE_INFO      E
+        WHERE A.ID      = B.CATEGORY_ID
+          AND B.ID      = C.PRODUCT_ID
+          AND B.ID      = D.PRODUCT_ID
+          AND D.FILE_ID = E.ID
+          AND D.TYPE    = 'MA'
+          AND B.ID      = #{id}
+    </select>
+    <select id="getComment" resultType="java.util.HashMap">
+        SELECT B.COMMENT                                             AS COMMENT,
+               B.SCORE                                               AS SCORE,
+               CONCAT(DATE_FORMAT(B.CREATE_DATE,'%Y.%m.%e'),'.방문') AS CREATE_DATE
+        FROM PRODUCT                  A,
+             RESERVATION_USER_COMMENT B
+        WHERE A.ID = B.PRODUCT_ID
+        <if test='type="detail"'>
+            LIMIT 3
+        </if>
+    </select>
+    <select id="getRating" resultType="java.util.HashMap">
+        SELECT COUNT(B.SCORE)                             AS COUNT,
+               ROUND(SUM(B.SCORE) / COUNT(B.SCORE),1)*10  AS RATING
+        FROM PRODUCT                  A,
+             RESERVATION_USER_COMMENT B
+        WHERE A.ID = B.PRODUCT_ID
+    </select>
+</mapper>
