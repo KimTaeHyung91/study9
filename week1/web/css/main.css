@@ -1,0 +1,119 @@
+header {
+    width: 100%;
+    height: 10%;
+    border: 1px solid #f6f6f6;
+    border-bottom: 10px solid #f6f6f6;
+    position: relative;
+}
+.menu {
+    position: absolute;
+    top: 15px;
+    left: 65%;
+}
+.menu > ul > li , .content-bottom > ul > li {
+    display: table;
+}
+
+.menu > ul > li > a , .content-bottom > ul > li > a {
+    display: table-cell;
+    vertical-align: middle;
+}
+.menu-right {
+    list-style: none;
+    text-align: center;
+    background: #8cbac7;
+    box-shadow: 1px 1px 1px 1px  gray;
+    float: left;
+    margin-left: 15px;
+    width: 130px;
+    height: 40px;
+}
+.menu-link {
+    text-decoration: none ;
+    font-weight: bold;
+    color: rebeccapurple;
+}
+.menu-center {
+    list-style: none;
+    text-align: center;
+    background: #8cbac7;
+    box-shadow: 1px 1px 1px 1px  gray;
+    float: left;
+    margin-left: 15px;
+    width: 130px;
+    height: 120px;
+    padding-top: 7px;
+}
+.menu-center > a {
+    color: white;
+}
+.container {
+    width: 100%;
+    height: 80%;
+    border: 1px solid #f6f6f6;
+    border-bottom: 10px solid #f6f6f6;
+}
+.content {
+    text-align: center;
+    position: relative;
+}
+.content-title {
+    font-weight: bold;
+}
+.content-bottom > ul {
+    position: absolute;
+    left: 39%;
+}
+
+.content-bottom > ul:after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+.content-img {
+    position: absolute;
+    left: 29%;
+    top: 240%;
+}
+.content-img > img {
+    width: 800px;
+    margin-top: 50px;
+}
+
+.content-aboutme, .content-photo {
+    width: 60%;
+    margin: 20px 0 0 400px;
+}
+
+.content-photo-top, .content-photo-bottom {
+    overflow: hidden;
+    position: relative;
+}
+.content-photo-top-img,.content-photo-bottom-img {
+    float: left;
+    border: 2px solid gray;
+    width: 300px;
+}
+
+.content-photo-desc {
+    position: absolute;
+    left: 30%;
+}
+
+footer {
+    width: 100%;
+    height: 10%;
+    position: relative;
+    border: 1px solid #f6f6f6;
+}
+.footer-center {
+    text-align: center;
+    position: absolute;
+    left: 45%;
+    top: 30%;
+}
+.footer-email , .footer-github{
+    color: #b7b7b7;
+    display: block;
+}
