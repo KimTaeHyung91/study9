@@ -38,7 +38,7 @@ public class DetailReviewController {
     }
 
     @SuppressWarnings ( "unchecked" )
-    @RequestMapping ( value = "getComment" )
+    @RequestMapping ( value = {"getComment","/detail/review/getReviewComment"} )
     public ModelAndView getComment() throws
                                      Exception {
         ModelAndView mav = new ModelAndView( "jsonView" );
@@ -52,8 +52,9 @@ public class DetailReviewController {
         }
         return mav;
     }
+    //url : 상대경로 가능한지 검토
     @SuppressWarnings ( "unchecked" )
-    @RequestMapping ( value = "getRating" )
+    @RequestMapping ( value = {"getRating","/detail/review/getReview"} )
     public ModelAndView getRating() throws
                                      Exception {
         ModelAndView mav = new ModelAndView( "jsonView" );
