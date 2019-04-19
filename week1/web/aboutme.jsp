@@ -28,7 +28,7 @@
                 </p>
             </div>
             <div class="content-aboutme">
-                <h1 class="content-title">나의 최근 프로젝트 설명</h1>
+                <h1 class="content-title">My Project</h1>
                 <p class="content-desc">
                     최근 만든 프로젝트 EU 프로젝트입니다.<br/>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam at consequuntur, delectus dolorum eius ex fuga iste natus, perspiciatis, possimus quaerat quas quia repudiandae rerum sunt ullam vel veritatis vero!<br/>
