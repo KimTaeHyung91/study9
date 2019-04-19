@@ -200,7 +200,6 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547705025805" />
@@ -309,10 +308,6 @@
   </component>
   <component name="SvnConfiguration">
     <configuration />
-  </component>
-  <component name="Talios.JiraConfigurationComponent" enableIssueTracking="false" autoRefresh="false" useExternalBrowser="false" refreshTimeout="0" annotateissues="false">
-    <servers />
-    <columns />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

@@ -10,7 +10,7 @@
 <html>
 <jsp:include page="head.html"/>
 <body>
-<a href="index.jsp">메인화면</a>
+<a href="index.jsp">Main Page</a>
 <h1>현재시간:<%=request.getAttribute("currentTime")%></h1>
 </body>
 </html>

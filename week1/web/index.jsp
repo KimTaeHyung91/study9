@@ -12,7 +12,7 @@
   <jsp:include page="menu.jsp"/>
     <div class="container">
         <div class="content">
-            <h1 class="content-title">AEM 개발자~~ iShyu!!!</h1>
+            <h1 class="content-title">AEM DEV~~ iShyu!!!</h1>
             <p class="content-desc">
                 AEM 개발팀 2019년도 성과 대박 나자!
             </p>

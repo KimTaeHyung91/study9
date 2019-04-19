@@ -10,10 +10,10 @@
 <header>
     <div class="menu">
         <ul>
-            <li class="menu-right"><a class="menu-link" href="index.jsp">홈</a></li>
-            <li class="menu-right"><a class="menu-link" href="aboutme.jsp">자기소개</a></li>
-            <li class="menu-right"><a class="menu-link" href="photo.jsp">내사진</a></li>
-            <li class="menu-right"><a class="menu-link" href="today">몇시에요</a></li>
+            <li class="menu-right"><a class="menu-link" href="index.jsp">Home</a></li>
+            <li class="menu-right"><a class="menu-link" href="aboutme.jsp">About Me</a></li>
+            <li class="menu-right"><a class="menu-link" href="photo.jsp">My Picture</a></li>
+            <li class="menu-right"><a class="menu-link" href="today">What time is it?</a></li>
         </ul>
     </div>
 </header>
