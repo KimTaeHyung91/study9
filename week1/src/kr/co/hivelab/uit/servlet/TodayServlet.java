@@ -13,12 +13,12 @@ public class TodayServlet extends HttpServlet {
 
     @Override
     protected void doGet( HttpServletRequest req, HttpServletResponse resp ) throws ServletException,IOException {
-        RequestDispatcher requestDispatcher = req.getRequestDispatcher( "currentTime.jsp" );
+        RequestDispatcher rd                = req.getRequestDispatcher( "currentTime.jsp" );
         DateTimeFormatter formatter         = DateTimeFormatter.ofPattern( "yyyy/MM/dd HH:mm" );
         String            formatDateTime    = LocalDateTime.now().format( formatter );
 
         req.setAttribute( "currentTime",formatDateTime );
-        requestDispatcher.forward( req,resp );
+        rd.forward( req,resp );
     }
 
     @Override
