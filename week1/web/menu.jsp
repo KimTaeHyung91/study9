@@ -13,7 +13,7 @@
             <li class="menu-right"><a class="menu-link" href="index.jsp">Home</a></li>
             <li class="menu-right"><a class="menu-link" href="aboutme.jsp">About Me</a></li>
             <li class="menu-right"><a class="menu-link" href="photo.jsp">My Picture</a></li>
-            <li class="menu-right"><a class="menu-link" href="today">What time is it?</a></li>
+            <li class="menu-right"><a class="menu-link" href="today">What time is it?????</a></li>
         </ul>
     </div>
 </header>
